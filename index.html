@@ -6,40 +6,58 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Spotifyweb</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
   <div class="container">
     <main>
       <section class="main-nav">
-        <div class="logo blu">
+        <!-- logo -->
+        <div class="logo">
           <a href="#"><img src="img/logo.svg" alt=""></a>
         </div>
-        <div class="Home lightblue">
-          <img src="img/home.svg" alt="">
-          <h4 class="title-main-nav">Home</h4>
-          <img src="img/libreria.svg" alt="">
-          <h4 class="title-main-nav">La tua libreria</h4>
-          <i class="fas fa-plus-square"></i>
-          <h3>Playlist</h3>
+        <!-- sezione home -->
+        <div id="top" class="ml-30">
+          <div class="home">
+            <a href="#"><img src="img/home.svg" alt="home"></a>
+            <span class="color-white font-size-15">Home</span>
+          </div>
+          <div class="search">
+            <a href="#"><img src="img/search.svg" alt="search"></a>
+            <span class="color-lightgrey font-size-15">Search</span>
+          </div>
+          <div class="libreria">
+            <a href="#"><img src="img/libreria.svg" alt="libreria"></a>
+            <span class="color-lightgrey font-size-15">La tua libreria</span>
+          </div>
+        </div>  <!--fine sezione top -->
 
-          <p class="sottotitoli-main-nav">Cerca</p>
-          <p class="sottotitoli-main-nav">La tua libreria</p>
-        </div>
-        <div class="playlist red">
-          <ul>
-            <li>Menu</li>
-            <li>Menu</li>
-            <li>Menu</li>
-            <li>Menu</li>
-            <li>Menu</li>
-            <li>Menu</li>
-            <li>Menu</li>
+        <!-- sezione playlist -->
+        <div id="playlist" class= "ml-30">
+          <h3>Playlist</h3>
+          <span class="plus"> <a href="#"><i class="fas fa-plus-square"></i></a></span>
+          <span class="color-lightgrey">Crea playlist</span>
+          <ul class="color-lightgrey font-text scroll">
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
           </ul>
         </div>
-        <div class="Installa-app yellow">
-            Installa app
+        <!-- main nav bottom-installa app -->
+        <div class="Installa-app ml-30 yellow">
+            <span class="plus-installa"> <a href="#"><i class="fas fa-plus-square"></i></a></span>
+            <span>Installa app</span>
+            <hr>
+            <img src="img/profile.svg" alt="">
+            <span>John Down</span>
         </div>
       </section>
+      <!-- /fine main nav -->
+      <!-- inizio main content -->
       <section class="main-content">
         <div class="nav-fix">
             <a href="" class="btn">Effettua l'Upgrade</a>
@@ -79,7 +97,37 @@
     </main>
 
     <footer>
+      <div class="footer-contained">
+        <div class="sinister">
+          <img src="img/sinister.jpeg" alt="">
+          <span>
+             <small>Sinister</small></span>
+            <span><small>Brano Nome</small></span>
+          <span>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="far fa-folder"></i></a>
+          </span>
+        </div>
+        <div class="play">
+          <div class="pulsanti-slider">
+            <a href="#"><i class="fas fa-redo"></i></a>
+            <a href="#"><i class="fas fa-step-backward"></i></a>
+            <a href="#"><i class="fas fa-play"></i></a>
+            <a href="#"><i class="fas fa-step-forward"></i></a>
+            <a href="#"><i class="fas fa-undo"></i></a>
+          </div>
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <div class="pulsanti-volume">
+          <a href="#"><i class="fas fa-list"></i></a>
+          <a href="#"><i class="fas fa-tv"></i></a>
+          <a href="#"><i class="fas fa-volume-up"></i></a>
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
 
+      </div>
     </footer>
   </div>
 
