@@ -78,29 +78,32 @@ main{
 /* fine sezione top del main nav */
 
 /* sezione playlist */
+#playlist{
+  min-height: 200px;
+  overflow:hidden;
+  flex-grow:3;
+}
 #playlist h3{
   text-transform:uppercase;
   font-size: 10px;
   color:white;
   margin-bottom: 10px;
 }
-.plus-installa a{
-  font-size: 25px;
-  background-color: grey;
-  list-style: none;
-}
+
 #playlist ul li{
   padding-top:10px;
 }
-#playlist{
-  min-height: 200px;
-  overflow-y: hidden;
-  flex-grow:3;
+.scroll{
+  height: 100%;
+  overflow-y:auto ;
 }
-/* .scroll{
-  min-height: 200px;
-  overflow-y: hidden;
-} */
+.plus .fas{
+  font-size: 20px;
+  color:grey;
+  background-color:transparent;
+  text-decoration: none;
+}
+
 /* fine sezione playlist del main nav */
 
 /* inizio sezione installa app */
@@ -110,22 +113,32 @@ main{
 }
 #installa-app hr{
   margin-right: 15px;
-  margin-top:5px;
-  margin-bottom: 5px;
+  margin-top:10px;
+  margin-bottom: 10px;
 }
+.plus-installa .fas{
+  font-size: 10px;
+  color:grey;
+  background-color:transparent;
+  text-decoration: none;
+}
+#installa-app p{
+  font-size: 10px;
+  color:white;
+  font-weight: bold;
+}
+
 .profile-johndoe img{
   width: 10%;
   border-radius: 50%;
   padding: 5px;
   background-color:grey;
 }
-.profile-johndoe small{
-  color:white;
-  font-size: 10px;
-  font-weight: bold;
-}
+/* fine sezione installa app */
 /* /main nav */
-/* main content nav fix */
+
+
+/* main content - nav fix */
 .main-content{
   width: calc(100% - 200px);
   height: 100%;
@@ -157,8 +170,7 @@ a.btn{
   text-decoration: none;
   text-transform: uppercase;
 }
-/* fine main content fix */
-/* inizio nav main content */
+
 .nav-main-content{
   display: flex;
   flex-direction: row;
@@ -184,18 +196,17 @@ a.btn{
 }
 /* copertine main content */
 #album{
-  margin-left: 10px;
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
 }
 .immagine img{
-  width: 80%;
+  width: 100%;
 }
 .immagine{
-  margin-right:-30px;
+  padding-left:10px;
   text-align: center;
-
+  width:calc(100% / 6 - 2px);
 }
 .immagine h4{
   font-size: 15px;
@@ -213,9 +224,7 @@ a.btn{
   flex-direction: row;
   justify-content:flex-start;
 }
-#album-john img{
-  width:50%;
-}
+
 /* #album-john .immagini{
   margin-right:-200px;
 } */
@@ -230,7 +239,7 @@ a.btn{
   justify-content:flex-start;
 }
 #album-popolari img{
-  width:50%;
+
   border-radius: 50%;
 }
 
@@ -248,14 +257,29 @@ footer{
   height: 100%;
   display:flex;
   flex-direction:row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-.footer-contained img{
+.sinister img{
   width:5%;
+}
+.footer-contained .far{
+    font-size:15px;
+    color:lightgrey;
+    background-color:transparent;
+    text-decoration: none;
+}
+.footer-contained .fas{
+    font-size:15px;
+    color:white;
+    background-color:transparent;
+    text-decoration: none;
 }
 .play{
   flex-grow: 1;
+}
+.pulsanti-slider {
+  text-align: center;
 }
 /* .push-play{
   justify-content:flex-end;
