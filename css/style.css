@@ -69,14 +69,26 @@ main{
   margin-bottom: 30px;
 }
 /* inizio sezione top del main nav */
+.home:hover{
+  color:white;
+}
+.search a:hover{
+  color:white;
+}
+.libreria a:hover{
+  color:white;
+}
+
 #top{
   padding-bottom: 10px;
 }
 #top img{
   width:10%;
+
 }
 #top a{
-  font-size: 20px;
+  font-size: 15px;
+  text-decoration: none;
 }
 /* fine sezione top del main nav */
 
@@ -92,7 +104,17 @@ main{
   color:white;
   margin-bottom: 10px;
 }
-
+#playlist a{
+  text-decoration: none;
+  color:grey;
+  font-size: 10px;
+}
+#playlist a:hover{
+  color:white;
+}
+#playlist .fas:hover{
+  color:white;
+}
 #playlist ul li{
   padding-top:10px;
 }
@@ -178,15 +200,20 @@ a.btn{
   display: flex;
   flex-direction: row;
   justify-content:center;
-
 }
-.nav-main-content span{
+.nav-main-content a{
   margin-top:150px;
   text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   padding-right: 10px;
   font-size: 10px;
-  color:white;
+  color:grey;
 }
+.nav-main-content a:hover{
+  color: white;  
+}
+
 /* fine nav main content */
 
 .title-main-content{
@@ -327,12 +354,15 @@ footer{
   background: #4CAF50;
   cursor: pointer;
 }
-
+/* versione s tablet */
 @media screen and (max-width:768px){
-  .album{
+  #album{
     flex-wrap: wrap;
   }
   .immagine{
-    width:calc(100% / 3)
+    width:calc(100% / 4 - 2px)
   }
 }
+
+/* versione xs cellulare*/
+@media screen and (max-width: 480px)
