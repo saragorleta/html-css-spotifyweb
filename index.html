@@ -37,7 +37,7 @@
           <h3>Playlist</h3>
           <span class="plus"> <a href="#"><i class="fas fa-plus-square"></i></a></span>
           <span class="color-lightgrey">Crea playlist</span>
-          <ul class="color-lightgrey font-text scroll">
+          <ul class="color-lightgrey font-size-10 scroll">
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
@@ -48,12 +48,17 @@
           </ul>
         </div>
         <!-- main nav bottom-installa app -->
-        <div class="Installa-app ml-30 yellow">
-            <span class="plus-installa"> <a href="#"><i class="fas fa-plus-square"></i></a></span>
-            <span>Installa app</span>
-            <hr>
+        <div id="installa-app" class="ml-30">
+          <span> <a href="#"><i class="fas fa-plus-square"></i></a></span>
+          <span class="color-lightgrey font-size-10">Installa app</span>
+          <hr>
+          <div class="profile-johndoe">
             <img src="img/profile.svg" alt="">
-            <span>John Down</span>
+            <span>
+              <small>John Doe</small>
+            </span>
+          </div>
+
         </div>
       </section>
       <!-- /fine main nav -->
@@ -70,28 +75,69 @@
         <div class="title-main-content">
           <h2>Recently played</h2>  <!-- 1°titolo main content-->
         </div>
-        <div class="recently copertine"> <!-- immagini main content-->
-            <img src="img/metal_lifting.jpg" alt="">
-            <img src="img/stranger.jpeg" alt="">
-            <img src="img/aquietplace.jpeg" alt="">
-            <img src="img/split.jpeg" alt="">
-            <img src="img/cure.jpeg" alt="">
-            <img src="img/sinister.jpeg" alt="">
+        <div id="album"> <!-- immagini main content-->
+            <div class="immagine">
+              <img src="img/metal_lifting.jpg" alt="">
+              <br><h4>Heavy metal</h4>
+              <p>Subtitle</p>
+            </div>
+            <div class="immagine">
+              <img src="img/stranger.jpeg" alt="">
+              <br><h4>Stranger Thing Vol.1 original Netflix</h4>
+              <p>Kyle Dixon & Michael Stein</p>
+            </div>
+            <div class="immagine">
+              <img src="img/aquietplace.jpeg" alt="">
+              <br><h4>A quite place</h4>
+              <p>Subtitle</p>
+            </div>
+            <div class="immagine">
+              <img src="img/split.jpeg" alt="">
+              <br><h4>Split</h4>
+              <p>Subtitle</p>
+            </div>
+            <div class="immagine">
+              <img src="img/cure.jpeg" alt="">
+              <br><h4>A cure for Wellness</h4>
+              <p>Subtitle</p>
+            </div>
+            <div class="immagine">
+              <img src="img/sinister.jpeg" alt="">
+              <br><h4>Sinister</h4>
+              <p>Subtitle</p>
+            </div>
         </div>
-        <div class="title-main-content">
-          <h2>Creato per john Doe</h2>  <!--2° titolo main content-->
+        <!-- <div class="title-main-content">-->
+
+          <div class="title-main-content">
+            <h2>Creato per john Doe</h2>
+          </div>
+          <div id="album-john">
+            <div class="immagine">
+              <img src="img/radar.jpeg" alt="">
+              <br>ciao
+            </div>
+            <div class="immagine">
+              <img src="img/mixdaily.jpeg" alt="">
+              <br>ciao
+            </div>
         </div>
-        <div class="johndoe copertine">
-          <img src="img/radar.jpeg" alt="">
-          <img src="img/mixdaily.jpeg" alt="">
-        </div>
-        <div class="title-main-content">
-          <h2>Artisti popolari</h2>  <!--3° titolo main content-->
-        </div>
-        <div class="popolari copertine">
-          <img src="img/einaudi.jpeg" alt="">
-          <img src="img/youg.jpeg" alt="">
-        </div>
+
+        <!-- <div id="album">
+          <div class="title-main-content">
+            <h2>Artisti popolari</h2>
+          </div>
+            <div class="immagine">
+              <img src="img/einaudi.jpeg" alt="">
+              <br>ciao
+            </div>
+            <div class="immagine">
+              <img src="img/youg.jpeg" alt="">
+              <br>ciao
+            </div>
+
+        </div> -->
+
       </section>  <!-- chiusura section main content -->
 
     </main>
@@ -124,7 +170,7 @@
           <a href="#"><i class="fas fa-list"></i></a>
           <a href="#"><i class="fas fa-tv"></i></a>
           <a href="#"><i class="fas fa-volume-up"></i></a>
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
         </div>
 
       </div>

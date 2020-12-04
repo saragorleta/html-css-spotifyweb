@@ -9,11 +9,20 @@
   background-color: grey;
 }
 /* riutilizzabili */
+.mr-20{
+  margin-right: 20px;
+}
 .ml-30{
   margin-left:30px;
 }
+.ml-15{
+  margin-left:15px;
+}
 .mb-10{
   margin-bottom: 10px;
+}
+.mb-20{
+  margin-bottom:20px;
 }
 .pb-10{
   padding-bottom:10px;
@@ -27,11 +36,14 @@
 .font-size-15{
   font-size: 15px;
 }
+.font-size-10{
+  font-size: 10px;
+}
 main{
   display:flex;
   height:calc(100% - 80px); /* misura del footer */
 }
-/* main nav */
+/* main nav logo */
 .main-nav{
   width:200px;
   height: 100%;
@@ -65,7 +77,7 @@ main{
   color:white;
   margin-bottom: 10px;
 }
-.plus a{
+.plus-installa a{
   font-size: 25px;
   background-color: grey;
   list-style: none;
@@ -73,39 +85,40 @@ main{
 #playlist ul li{
   padding-top:10px;
 }
-/* fine sezione playlist del main nav */
-
-.plus-installa a{
-  font-size: 10px;
-  border-radius: 50%;
-}
-.playlist{
-  flex-grow:2;
-}
-.scroll{
-  /* flex-grow: 2; */
+#playlist{
   min-height: 200px;
   overflow-y: hidden;
+  flex-grow:3;
 }
-.Installa-app img{
+/* .scroll{
+  min-height: 200px;
+  overflow-y: hidden;
+} */
+/* fine sezione playlist del main nav */
+
+/* inizio sezione installa app */
+#installa-app a{
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+#installa-app hr{
+  margin-right: 15px;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+.profile-johndoe img{
   width: 10%;
+  border-radius: 50%;
+  padding: 5px;
+  background-color:grey;
+}
+.profile-johndoe small{
+  color:white;
+  font-size: 10px;
+  font-weight: bold;
 }
 /* /main nav */
-
-/* da cancellare */
-.blu{
-  background-color:blue;
-}
-.lightblue{
-  background-color: lightblue;
-}
-.red{
-  background-color: red;
-}
-.yellow{
-  background-color: yellow;
-}
-/* /da cancellare */
+/* main content nav fix */
 .main-content{
   width: calc(100% - 200px);
   height: 100%;
@@ -122,6 +135,7 @@ main{
   right:0;
   line-height:100px;
   text-align: right;
+  z-index: 1;
 }
 .nav-fix .btn{
   padding:5px 10px;
@@ -136,6 +150,8 @@ a.btn{
   text-decoration: none;
   text-transform: uppercase;
 }
+/* fine main content fix */
+/* inizio nav main content */
 .nav-main-content{
   display: flex;
   flex-direction: row;
@@ -148,38 +164,54 @@ a.btn{
   font-size: 10px;
   color:white;
 }
+/* fine nav main content */
+
 .title-main-content{
   display:flex;
   flex-direction: row;
   justify-content:flex-start;
+  color:white;
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom:15px;
 }
 /* copertine main content */
-.recently{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-}
-.johndoe{
+#album{
+  margin-left: 10px;
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
 }
-.popolari{
+.immagine img{
+  width:80%;
+}
+.immagine h4, p{
+  text-align: center;
+  color:white;
+}
+.immagine h4{
+  font-size: 15px;
+}
+.immagine  p{
+  font-size: 10px;
+  padding-top: 10px;
+  padding-bottom:20px;
+}
+#album-john{
+  margin-left: 10px;
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
 
 }
-.copertine img{
-  width: 15%;
+#album-john img{
+  width:50%;
+
 }
+
 .popolari img{
   border-radius: 50%;
-}
+} */
 /* /copertine main content */
-.testo{
-  padding-top:100px;
-}
 
 footer{
   width:100%;
@@ -228,7 +260,5 @@ footer{
   cursor: pointer;
 }
 
-@media screen and (max-width:768px)
-width: calc(100% / 12 * 1);
-}
-@media screen and (max-width:578px)
+/* @media screen and (max-width:768px)
+  width: calc(100% / 12 * 1); */
