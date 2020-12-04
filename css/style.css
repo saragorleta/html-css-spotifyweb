@@ -33,6 +33,9 @@
 .pb-10{
   padding-bottom:10px;
 }
+.pr-30{
+  padding-right:30px;
+}
 .color-white{
   color:white;
 }
@@ -142,7 +145,7 @@ main{
 .main-content{
   width: calc(100% - 200px);
   height: 100%;
-  background-color:rgb(45, 45, 45);
+  background-color:rgb(41, 40, 54);
   overflow-y:scroll;
 }
 .main-content .nav-fix{
@@ -175,6 +178,7 @@ a.btn{
   display: flex;
   flex-direction: row;
   justify-content:center;
+
 }
 .nav-main-content span{
   margin-top:150px;
@@ -248,7 +252,7 @@ a.btn{
 footer{
   width:100%;
   height: 80px;
-  background-color: darkgrey;
+  background-color:rgb(45, 45, 45);
   position: fixed;
   left:0;
   bottom:0;
@@ -260,8 +264,16 @@ footer{
   justify-content: center;
   align-items: center;
 }
+.sinister{
+  width:calc(100 / 3);
+  margin-left:10px;
+}
 .sinister img{
   width:5%;
+
+}
+.sinister .far{
+  padding-right:10px;
 }
 .footer-contained .far{
     font-size:15px;
@@ -276,10 +288,19 @@ footer{
     text-decoration: none;
 }
 .play{
-  flex-grow: 1;
-}
-.pulsanti-slider {
+  width:calc(100% / 3);
   text-align: center;
+}
+.pulsanti-slider .fas{
+  padding-right: 10px;
+}
+.pulsanti-volume{
+  width:calc(100% / 3);
+  text-align: right;
+  margin-right: 10px;
+}
+.pulsanti-volume .fas{
+  padding-right:15px;
 }
 /* .push-play{
   justify-content:flex-end;
@@ -307,5 +328,11 @@ footer{
   cursor: pointer;
 }
 
-/* @media screen and (max-width:768px)
-  width: calc(100% / 12 * 1); */
+@media screen and (max-width:768px){
+  .album{
+    flex-wrap: wrap;
+  }
+  .immagine{
+    width:calc(100% / 3)
+  }
+}
