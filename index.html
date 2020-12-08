@@ -57,8 +57,6 @@
             <a href="#"><li>Nome Playlist</li></a>
             <a href="#"><li>Nome Playlist</li></a>
             <a href="#"><li>Nome Playlist</li></a>
-
-
           </ul>
         </div>
         <!-- main nav bottom-installa app -->
@@ -68,10 +66,8 @@
           <hr>
           <div class="profile-johndoe">
             <img src="img/profile.svg" alt="">
-
               <p>John Doe</p>
           </div>
-
         </div>
       </section>
       <!-- /fine main nav -->
@@ -94,6 +90,11 @@
         <div id="album"> <!-- immagini main content-->
             <div class="immagine">
               <img src="img/metal_lifting.jpg" alt="">
+              <div class="middle">
+                <div class="circle-plus">
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </div>
               <br><h4>Heavy metal</h4>
               <p>Subtitle</p>
             </div>
@@ -155,9 +156,8 @@
     </main>
 
     <footer>
-      <div class="footer-contained">
-        <div class="sinister">
-          <div class="sinister-contained ">
+      <div id="footer-contained">
+        <div class="left">
             <img src="img/sinister.jpeg" alt="">
             <span>
                <small class="color-white font-size-15">Sinister</small>
@@ -165,8 +165,6 @@
               <span>
                 <small class="color-lightgrey font-size-10 pr-30">Brano Nome</small>
               </span>
-          </div>
-
           <span>
             <a href="#"><i class="far fa-heart"></i></a>
           </span>
@@ -175,24 +173,25 @@
           </span>
         </div>  <!-- chiusura sinister -->
 
-        <div class="play">
-          <div class="pulsanti-slider">
+        <div class="center ">
             <a href="#"><i class="fas fa-redo"></i></a>
             <a href="#"><i class="fas fa-step-backward"></i></a>
             <a href="#"><i class="fas fa-play"></i></a>
             <a href="#"><i class="fas fa-step-forward"></i></a>
             <a href="#"><i class="fas fa-undo"></i></a>
-          </div>
-          <!-- <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider slider-center" id="myRange">
+            </div>
         </div>
 
-        <div class="pulsanti-volume">
+        <div class="right">
           <a href="#"><i class="fas fa-list"></i></a>
           <a href="#"><i class="fas fa-tv"></i></a>
           <a href="#"><i class="fas fa-volume-up"></i></a>
-          <!-- <input type="range" min="1" max="100" value="50" class="slider" id="myRange2"> -->
+          <input type="range" min="1" max="100" value="50" class="slider slider-right" id="myRange2">
         </div>
-      </div>  <!-- chiusura footer contained -->
+      </div>
+    </div>  <!-- chiusura footer contained -->
 
     </footer>
   </div>
