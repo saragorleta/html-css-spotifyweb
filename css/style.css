@@ -8,6 +8,14 @@
   height:100vh;
   background-color: grey;
 }
+a {
+  color: lightgrey;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color:white;
+}
 /* riutilizzabili */
 .mr-20{
   margin-right: 20px;
@@ -39,6 +47,9 @@
 .color-white{
   color:white;
 }
+.color-grey{
+  color:grey;
+}
 .color-lightgrey{
   color:lightgrey;
 }
@@ -48,6 +59,7 @@
 .font-size-10{
   font-size: 10px;
 }
+
 /* /riutilizzabili */
 main{
   display:flex;
@@ -62,33 +74,35 @@ main{
   flex-direction: column;
   justify-self: center;
 }
-.logo{
+.main-nav .logo{
   width:50%;
   margin-top: 20px;
   margin-left: 30px;
   margin-bottom: 30px;
 }
-/* inizio sezione top del main nav */
-.home:hover{
-  color:white;
+.main-nav .logo-mobile{
+  display:none;
 }
-.search a:hover{
-  color:white;
+/* top main nav */
+#top {
+  line-height:25px;
 }
-.libreria a:hover{
-  color:white;
+#top a:hover img{
+  opacity:1;
 }
-
+#top a:hover span{
+  opacity:1;
+}
 #top{
   padding-bottom: 10px;
 }
 #top img{
   width:10%;
-
+  vertical-align: middle;
+  opacity: 0.6;
 }
 #top a{
-  font-size: 15px;
-  text-decoration: none;
+  text-decoration:none;
 }
 /* fine sezione top del main nav */
 
@@ -132,20 +146,22 @@ main{
 /* fine sezione playlist del main nav */
 
 /* inizio sezione installa app */
+#installa-app .app-download img {
+  width: 20px;
+  vertical-align: middle;
+}
+.app-download{
+  margin-left:25px;
+    padding-top:10px;
+}
 #installa-app a{
   font-size: 10px;
-  margin-bottom: 5px;
 }
 #installa-app hr{
-  margin-right: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
   margin-top:10px;
   margin-bottom: 10px;
-}
-.plus-installa .fas{
-  font-size: 10px;
-  color:grey;
-  background-color:transparent;
-  text-decoration: none;
 }
 #installa-app p{
   font-size: 10px;
@@ -156,8 +172,16 @@ main{
 .profile-johndoe img{
   width: 10%;
   border-radius: 50%;
-  padding: 5px;
+  margin-right:10px;
+  margin-left:25px;
   background-color:grey;
+  overflow: hidden;
+}
+.profile-johndoe {
+  display:flex;
+  align-items: center;
+  padding-bottom: 10px;
+
 }
 /* fine sezione installa app */
 /* /main nav */
@@ -187,19 +211,19 @@ main{
   border:1px solid white;
   border-radius: 15px;
   margin-right: 20px;
+
 }
 a.btn{
   font-size: 10px;
   color:white;
   text-decoration: none;
   text-transform: uppercase;
+  transition: transform .2s;
 }
-.btn:hover{
-  animation:move 2s infinite;
-}
-@keyframes move{
-  0%{left:5px;right:5px;width:100px;}
-  50%{left:10px;right:10px;width:200px;}
+a.btn:hover
+a.btn:active
+a.btn:focus{
+  font-size: 50px;
 }
 
 .nav-main-content{
@@ -249,18 +273,21 @@ a.btn{
 .immagine:hover img{
   width:100%;
   opacity: 0.3;
+  /* position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
-.middle {
-  opacity: 0;
+
+/* .hover:hover .fas{
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-}
-.circle-plus .fas{
-  color:white;
-  font-size: 50px;
+} */
+.hover .fas{
+  color:lightgrey;
+  font-size: 30px;
 }
 .immagine h4{
   font-size: 15px;
@@ -308,10 +335,11 @@ footer{
   bottom:0;
 }
 #footer-contained{
+  width:100%;
   height: 100%;
   display:flex;
   flex-direction:row;
-  justify-content:center;
+  justify-content:space-between;
   align-items: center;
 }
 #footer-contained .far{
@@ -330,16 +358,19 @@ footer{
     text-decoration: none;
 }
 .left{
-  width:calc(100 / 3);
-  margin-left:10px;
+  width:200px;
+  height:100%;
+  padding:10px;
 }
 .center{
-  width:calc(100% / 3);
+  width:10%;
+  height:100%;
   text-align: center;
-  flex-grow: 4;
+  flex-grow: 2;
 }
 .right{
-  width:calc(100% / 3);
+  width:200px;
+  height:100%;
   text-align: right;
   margin-right:10px;
 }
@@ -429,23 +460,45 @@ input[type='range']::-webkit-slider-thumb {
 
 /* versione xs cellulare*/
 @media screen and (max-width: 480px){
-  #album{
-    flex-wrap:wrap;
-  }
-  .immagine{
-    width:calc(100% / 2 - 10px);
+  .main-nav {
+    width: 50px;
   }
   .main-content{
-    flex-wrap: wrap;
+    width: calc(100% - 50px);
   }
-  .nav-main-content a{
-    /* display: flex;
-    flex-direction: row;
-    justify-content:center; */
-    margin-left: 150px;
-    width:calc(100% / 4 - 20px)
+  .main-content .nav-fix {
+    width: calc(100% - 50px);
+    }
+  .main-nav .logo,
+  .main-nav #playlist,
+  .main-nav #top span,
+  .main-nav #installa-app .app-download span,
+  main-nav #installa-app .profile-johndoe p {
+    display: none;
   }
-}
-.main-nav{
-  display: none;
+  .main-nav .logo-mobile {
+    display: block;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+  }
+  .main-nav #installa-app{
+    background-color: red;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .main-nav #installa-app .app-download img{
+    width: 100%;
+  }
+  .main-nav #installa-app .profile-johndoe img{
+    width:100%;
+  }
+  .main-nav #installa-app .app-download,
+  .main-nav #installa-app .profile-johndoe{
+    margin-left:0;
+  }
 }

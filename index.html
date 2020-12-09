@@ -11,28 +11,36 @@
 <body>
   <div class="container">
     <main>
+      <!-- nav header di sinistra  -->
       <section class="main-nav">
-        <!-- logo -->
+        <!-- / nav header di sinistra  -->
+        <!-- logo desktop-->
         <div class="logo">
-          <a href="#"><img src="img/logo.svg" alt="logo spotify"></a>
+          <img src="img/logo.svg" alt="logo spotify">
         </div>
+        <!-- / logo desktop -->
+        <!-- logo mobile -->
+        <div class="logo-mobile">
+          <img src="img/logo-small.svg" alt="">
+        </div>
+        <!-- / logo mobile -->
         <!-- sezione home -->
         <div id="top" class="ml-30">
           <div class="home">
-            <a href="#"><img src="img/home.svg" alt="home"></a>
-            <a href="#" class="color-white">Home</a>
+            <a href="#"><img src="img/home.svg" alt="home">
+            <span>Home</span></a>
           </div>
           <div class="search">
-            <a href="#"><img src="img/search.svg" alt="search"></a>
-            <a href="#" class="color-lightgrey">Search</a>
+            <a href="#"><img src="img/search.svg" alt="search">
+            <span>Cerca</span></a>
           </div>
           <div class="libreria">
-            <a href="#"><img src="img/libreria.svg" alt="libreria"></a>
-            <a href="#" class="color-lightgrey">La tua libreria</a>
+            <a href="#"><img src="img/libreria.svg" alt="libreria">
+            <span>La tua libreria</span></a>
           </div>
         </div>  <!--fine sezione top -->
 
-        <!-- sezione playlist -->
+        <!--playlist -->
         <div id="playlist" class= "ml-30">
            <h3>Playlist</h3>
           <span class="plus"> <a href="#"><i class="fas fa-plus-square"></i></a></span>
@@ -54,15 +62,18 @@
             <a href="#"><li>Nome Playlist</li></a>
             <a href="#"><li>Nome Playlist</li></a>
             <a href="#"><li>Nome Playlist</li></a>
-            <a href="#"><li>Nome Playlist</li></a>
-            <a href="#"><li>Nome Playlist</li></a>
-            <a href="#"><li>Nome Playlist</li></a>
           </ul>
         </div>
+        <!-- /playlist -->
         <!-- main nav bottom-installa app -->
-        <div id="installa-app" class="ml-30">
-          <span class="plus-installa"> <a href="#"><i class="fas fa-plus-square"></i></a></span>
-          <span class="color-lightgrey font-size-10">Installa app</span>
+        <div id="installa-app">
+          <div class="app-download">
+            <a href="#">
+              <img src="img/download.svg" alt="app download">
+              <span>Installa app</span>
+            </a>
+          </div>
+
           <hr>
           <div class="profile-johndoe">
             <img src="img/profile.svg" alt="">
@@ -76,7 +87,7 @@
         <div class="nav-fix">
             <a href="" class="btn">Effettua l'Upgrade</a>
         </div>
-        <div class="nav-main-content">
+        <div class="nav-main-content"><!-- nome corretto "call to action" -->          
           <a href="#">In evidenza</a>
           <a href="#">Podcast</a>
           <a href="#">Classifiche</a>
@@ -90,11 +101,14 @@
         <div id="album"> <!-- immagini main content-->
             <div class="immagine">
               <img src="img/metal_lifting.jpg" alt="">
-              <div class="middle">
-                <div class="circle-plus">
-                  <i class="fas fa-plus-circle"></i>
-                </div>
+              <div class="cover-layover">
+                <i class="fas fa-plus-circle"></i>
               </div>
+
+
+              <!-- <div class="middle">
+                  <i class="fas fa-plus-circle"></i>
+              </div> -->
               <br><h4>Heavy metal</h4>
               <p>Subtitle</p>
             </div>
@@ -174,11 +188,15 @@
         </div>  <!-- chiusura sinister -->
 
         <div class="center ">
-            <a href="#"><i class="fas fa-redo"></i></a>
-            <a href="#"><i class="fas fa-step-backward"></i></a>
-            <a href="#"><i class="fas fa-play"></i></a>
-            <a href="#"><i class="fas fa-step-forward"></i></a>
-            <a href="#"><i class="fas fa-undo"></i></a>
+          <!-- icone -->
+          <div class="player-controller-icons">
+                <a href="#"><i class="fas fa-redo"></i></a>
+                <a href="#"><i class="fas fa-step-backward"></i></a>
+                <a href="#"><i class="fas fa-play"></i></a>
+                <a href="#"><i class="fas fa-step-forward"></i></a>
+                <a href="#"><i class="fas fa-undo"></i></a>
+          </div>
+
             <div class="slidecontainer">
               <input type="range" min="1" max="100" value="50" class="slider slider-center" id="myRange">
             </div>
