@@ -267,9 +267,10 @@ a.btn{
   padding-left:10px;
   text-align: center;
   width:calc(100% / 6 - 2px);
-  position:relative;
+
 }
 .cover:hover{
+  position:relative;
   width:100%;
   opacity: 0.3;
 }
