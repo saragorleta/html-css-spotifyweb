@@ -218,14 +218,10 @@ a.btn{
   color:white;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform .2s;
 }
-a.btn:hover
-a.btn:active
-a.btn:focus{
-  font-size: 50px;
+.nav-fix a:hover{
+  font-size: 15px;
 }
-
 .nav-main-content{
   display: flex;
   flex-direction: row;
@@ -374,8 +370,8 @@ footer{
   text-align: right;
   margin-right:10px;
 }
-.left img{
-  width:5%;
+#footer-contained .left img{
+  width:10%;
 }
 .left a{
   padding-right:10px;
@@ -473,7 +469,8 @@ input[type='range']::-webkit-slider-thumb {
   .main-nav #playlist,
   .main-nav #top span,
   .main-nav #installa-app .app-download span,
-  main-nav #installa-app .profile-johndoe p {
+  .main-nav #installa-app .profile-johndoe p,
+  .main-nav #installa-app hr {
     display: none;
   }
   .main-nav .logo-mobile {
@@ -483,8 +480,14 @@ input[type='range']::-webkit-slider-thumb {
     margin: auto;
     padding-top: 5px;
   }
+  .main-nav #top img{
+    width: 100%;
+    vertical-align: middle;
+    opacity: 0.6;
+    margin-left: -15px;
+  }
   .main-nav #installa-app{
-    background-color: red;
+  
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -492,13 +495,13 @@ input[type='range']::-webkit-slider-thumb {
     justify-content: flex-end;
   }
   .main-nav #installa-app .app-download img{
-    width: 100%;
+    width: 90%;
+    margin-left:-12px;
+    padding-bottom: 5px;
   }
   .main-nav #installa-app .profile-johndoe img{
-    width:100%;
+    width:50%;
+    margin:0 auto;
   }
-  .main-nav #installa-app .app-download,
-  .main-nav #installa-app .profile-johndoe{
-    margin-left:0;
-  }
+
 }
